@@ -5,17 +5,21 @@ const ContactUs = () => {
     <>
       <div>
         <h4 className='text-[#878787] tracking-[5px] text-lg'>CONTACT US</h4>
-        <h3 className='text-4xl'>Be the first to hear of the<strong className='font-black '> LATEST EVENTS</strong></h3>
+        <h3 className='text-4xl'>Keep in touch with us</h3>
       </div>
       <form action="">
-        <label htmlFor="">NAME</label>
-        <input 
-        type="text"
-        name='name'/>
-        <label htmlFor="">EMAIL</label>
-        <input 
-        type="text"
-        name='email'/>
+        <div className='border-2 w-full h-full'>
+          <label htmlFor="">NAME</label>
+          <input
+            type="text"
+            name='name' />
+        </div>
+        <div className='border-2'>
+          <label htmlFor="">EMAIL</label>
+          <input
+            type="text"
+            name='email' />
+        </div>
       </form>
     </>
   )
