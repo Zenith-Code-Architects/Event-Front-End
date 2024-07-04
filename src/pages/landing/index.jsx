@@ -12,7 +12,6 @@ const LandingPage = () => {
             <NavBar />
             <Hero />
             <EventListings />
-            
             <AboutUs />
             <ContactUs />
             <OurCustomers />
