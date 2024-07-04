@@ -1,4 +1,5 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+
+import { RouterProvider, createBrowserRouter,  } from 'react-router-dom'
 import './App.css'
 import LandingPage from "./pages/landing";
 import AllEvents from './pages/all-events';
@@ -21,4 +22,5 @@ function App() {
   return <RouterProvider router={router}/>
 }
 
-export default App
+
+export default App 
