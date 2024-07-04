@@ -11,7 +11,7 @@ const LandingPage = () => {
         <div>
             <NavBar />
             <Hero />
-            <EventListings />
+            <section id="eventlistings"><EventListings /></section>
             <AboutUs />
             <ContactUs />
             <OurCustomers />

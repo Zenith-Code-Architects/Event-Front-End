@@ -11,16 +11,13 @@ const Nav = {
         },
         {
             name:"Events",
-            path:"/events"
+            path:"eventlistings"
         },
         {
             name:"Contact Us",
             path:"/contact-us"
         },
-        {
-            name:"Create Event +",
-            path:"event-creation"
-        },
+        { name: "Create Event +", path: "event-creation", newWindow: true }
 
 
     ]

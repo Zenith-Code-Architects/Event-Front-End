@@ -9,8 +9,13 @@ const NavBar = () => {
       <img src={Logo} alt="logo" className='h-12 w-auto'/>
 <ul className="nav-links">
                 {Nav.NAVLINKS.map(link => (
-                    <li key={link.name}>
-                        <Link to={link.path} className="nav-link">{link.name}</Link>
+                    <li key={link.path}>
+                      
+                      {link.newWindow ? (
+              <a href={link.path} target="_blank" rel="noopener noreferrer" className="nav-link">{link.name}</a>
+            ) : (
+              <a href={`#${link.path}`} className="nav-link">{link.name}</a>
+            )}
                     </li>
                 ))}
             </ul>

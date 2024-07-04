@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import EventCards from '../../../components/EventCards'
 import EventImageOne from '../../../assets/images/ballondor1.jpg'
 import EventImageTwo from '../../../assets/images/grammys1.jpg'
 import EventImageThree from '../../../assets/images/fashion.avif'
 import EventImageFour from '../../../assets/images/tech.jpg'
 import '../../../App.css'
+import axios from 'axios'
 
 const EventListings = () => {
+  
+
   return (
-    <>di
+    <><div >
       <h3 className=''>ZCA EVENTS</h3>
       <h2>Event Listing</h2>
       <div className='flex justify-center gap-x-6 py-28 bg-[#F7F7F7]'>
@@ -57,6 +60,7 @@ const EventListings = () => {
           </div>
         </div>
         <a href="all-events" className='text-sm'>SEE MORE</a>
+      </div>
       </div>
     </>
   )
