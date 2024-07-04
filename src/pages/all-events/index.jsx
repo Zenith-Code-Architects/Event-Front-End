@@ -7,10 +7,12 @@ import EventImageFour from '../../assets/images/tech.jpg'
 
 const AllEvents = () => {
   return (
-    
-    <div className='flex justify-center'>
-     <div className=''>
-      <div></div>
+
+    <>
+      <div className='bgImage2'>
+      </div>
+      <div className='flex justify-center'>
+        <div className=''>
           <div className='bg-[#FFFFFF] p-4 '>
             <EventCards
               flier={EventImageOne}
@@ -54,7 +56,7 @@ const AllEvents = () => {
               presenter='France Football' />
           </div>
         </div>
-    </div>
+      </div></>
   )
 }
 
