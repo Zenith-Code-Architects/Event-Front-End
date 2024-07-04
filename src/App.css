@@ -35,3 +35,8 @@
 .nav-link:hover {
     color: #ff6347; /* Change to desired hover color */
 }
+
+.required {
+    color: red;
+        margin-left: 4px;
+}

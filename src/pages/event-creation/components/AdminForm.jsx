@@ -8,7 +8,7 @@ const AdminForm = () => {
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-name">
-                        Event Name<span className="required">*</span>:
+                        Event Name<span className="required">*</span>
                     </label>
                     <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="event-name" type="text" placeholder="Event Caption" required /> {/* <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
                         */}
@@ -17,16 +17,16 @@ const AdminForm = () => {
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-date">
-                        Event Date
+                        Event Date<span className="required">*</span>
                     </label>
                     <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="event-date" type="date" placeholder="Date" />
                 </div>
 
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-time">
-                        Event Time
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-description">
+                        Event Description<span className="required">*</span>
                     </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="event-time" type="time" placeholder="Time" />
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="event-description" type="text" placeholder="description" />
                     <p class="text-red-500 text-xs italic">Please fill out this field.</p>
                 </div>
 
@@ -35,14 +35,14 @@ const AdminForm = () => {
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-location">
-                        Location
+                        Location<span className="required">*</span>
                     </label>
                     <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="event-location" type="text" placeholder="City & Digital Address" />
                 </div>
 
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-price">
-                        Price
+                        Price<span className="required">*</span>
                     </label>
                     <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="event-price" type="text" placeholder="Price" />
 
