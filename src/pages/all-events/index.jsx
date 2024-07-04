@@ -7,6 +7,7 @@ import EventImageFour from '../../assets/images/tech.jpg'
 
 const AllEvents = () => {
   return (
+    
     <div className='flex justify-center'>
      <div className=''>
       <div></div>
