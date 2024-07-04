@@ -1,0 +1,16 @@
+.bgImage{
+    background-image: url(./assets/images/about-us.jpg);
+}
+
+.bgImage1{
+    background-image: url(./assets/images/new.jpg);
+}
+
+.spacing{
+    word-spacing: 2px;
+    letter-spacing: 0.6px;
+}
+
+.opacity{
+    background-color: rgba(0, 0, 0, 0.5);
+}

@@ -11,10 +11,11 @@ const LandingPage = () => {
         <div>
             <NavBar />
             <Hero />
-            <AboutUs />
             <EventListings />
-            <OurCustomers />
+            
+            <AboutUs />
             <ContactUs />
+            <OurCustomers />
             <Footer />
         </div>
     )
