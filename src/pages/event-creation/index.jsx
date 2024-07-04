@@ -1,6 +1,15 @@
+import Header from './components/Header'
+import AdminForm from './components/AdminForm'
+ 
+
 const EventCreation = () => {
   return (
-    <div>now</div>
+   
+       <div>
+           <Header />
+           <AdminForm />
+        </div>
+    
   )
 }
 
