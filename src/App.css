@@ -1,0 +1,29 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+.navbar-logo {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff6347; /* Change to desired hover color */
+}
