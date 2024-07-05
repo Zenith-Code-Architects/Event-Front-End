@@ -5,8 +5,6 @@ import LandingPage from "./pages/landing";
 import AllEvents from './pages/all-events';
 import AdminDashboard from './pages/admin-dashboard';
 import EventCreation from './pages/event-creation';
-import EventListings from './pages/landing/components/EventListings';
-import AboutUs from './pages/landing/components/AboutUs';
 import EventDetails from './pages/event-details';
 
 function App() {
