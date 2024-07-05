@@ -1,64 +1,76 @@
+import axios from 'axios';
 import React from 'react'
 
+
 const AdminForm = () => {
+
+    // Post event backend
+    const postEvent = async (event) => {
+        event.preventDefault();
+        //Collect all inputs from form
+        const formData = new FormData(event.target);
+        // Post data
+        const response = await axios.post('https://zenith-code-architects-event-api.onrender.com/events', formData);
+        console.log(response);
+    }
     return (
 
 
-        <form class="w-full max-w-lg m-auto mt-8">
-            <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-name">
+        <form onSubmit={postEvent} className="w-full max-w-lg m-auto mt-8 ">
+            <div className="flex flex-wrap -mx-3 mb-6 ">
+                <div className="w-full px-3">
+                    <label className="block uppercase tracking-wide text-xs font-bold mb-2" htmlFor="name">
                         Event Name<span className="required">*</span>
                     </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="event-name" type="text" placeholder="Event Caption" required /> {/* <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
+                    <input className="appearance-none block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Event Caption" name='name' required /> {/* <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
                         */}
                 </div>
             </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-1/2 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-date">
+            <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full md:w-1/2 px-3">
+                    <label className="block uppercase tracking-wide text-xs font-bold mb-2" htmlFor="date">
                         Event Date<span className="required">*</span>
                     </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="event-date" type="date" placeholder="Date" />
+                    <input className="appearance-none block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="date" type="date"  name="date" placeholder="Date" />
                 </div>
 
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-description">
+                <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label className="block uppercase tracking-wide  text-xs font-bold mb-2" htmlFor="eventDescription">
                         Event Description<span className="required">*</span>
                     </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="event-description" type="text" placeholder="description" />
-                    <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                    <input className="appearance-none block w-full bg-gray-200  border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="eventDescription" type="text" name='eventDescription' placeholder="description" />
+                
                 </div>
 
             </div>
 
-            <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-1/2 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-location">
+            <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full md:w-1/2 px-3">
+                    <label className="block uppercase tracking-wide  text-xs font-bold mb-2" htmlFor="location">
                         Location<span className="required">*</span>
                     </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="event-location" type="text" placeholder="City & Digital Address" />
+                    <input className="appearance-none block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="location" type="text" name='location' placeholder="City & Digital Address" />
                 </div>
 
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-price">
+                <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label className="block uppercase tracking-wide  text-xs font-bold mb-2" htmlFor="price">
                         Price<span className="required">*</span>
                     </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="event-price" type="text" placeholder="Price" />
+                    <input className="appearance-none block w-full bg-gray-200  border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name='price' id="price" type="text" placeholder="Price" />
 
                 </div>
 
             </div>
 
-            <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="event-flier">
+            <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                    <label className="block uppercase tracking-wide  text-xs font-bold mb-2" htmlFor="eventFlier">
                         Flier
                     </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="event-flier" type="file" placeholder="Event Flier" />
+                    <input className="appearance-none block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="eventFlier" name='eventFlier' type="file" placeholder="Event Flier" />
                 </div>
                 <div className='mx-auto mt-8'>
-                    <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white bg-[#793203] shadow-black hover:border-transparent hover:text-white-600 hover:bg-[#f79456] mt-4 lg:mt-0">Post Updates</a>
+                    <button type='submit' className="inline-block text-sm px-4 py-2 leading-none border rounded text-white bg-[#793203] shadow-black hover:border-transparent hover:text-white-600 hover:bg-[#f79456] mt-4 lg:mt-0">Submit</button>
                 </div>
             </div>
 
