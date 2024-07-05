@@ -13,8 +13,8 @@ const LandingPage = () => {
             <section id="aboutus"><AboutUs /></section>
             <section id="eventlistings"><EventListings /></section>
             <section id="contactus"><ContactUs /></section>
-            <section id="ourcustomers"><OurCustomers /></section>
-           <Footer />
+            {/* <section id="ourcustomers"><OurCustomers /></section>
+           <Footer /> */}
         </div>
     )
 }

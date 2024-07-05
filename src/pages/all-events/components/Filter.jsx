@@ -18,7 +18,7 @@ const Filter = () => {
             </div>
 
             <div class="filter-section">
-                <label className='mr-3'>Filter by type:</label>
+                {/* <label className='mr-3'>Filter by type:</label> */}
                 {/* <input type="checkbox" id="type1" value="type1" />
                 <label for="type1">Type 1</label>
                 <div>
@@ -60,10 +60,10 @@ const Filter = () => {
                         <label class="mr-3" for="desc">Descending</label>
                     </div>
 
-                    <div class="filter-section">
+                    {/* <div class="filter-section">
                         <button type="button" onclick="applyFilters()">Apply Filters</button>
                         <button type="button" onclick="resetFilters()">Reset Filters</button>
-                    </div>
+                    </div> */}
 
                     <div class="filter-section">
                         <label class="mr-3" for="filter">Filter by:</label>
