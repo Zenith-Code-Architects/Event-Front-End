@@ -10,10 +10,10 @@ import EventDetails from './pages/event-details';
 function App() {
   const router = createBrowserRouter([
     {path:"/", element:<LandingPage/>},
-    {path:"all-events", element:<AllEvents/>},
-    {path:"admin-dashboard", element:<AdminDashboard/>},
-    {path:"event-creation", element:<EventCreation/>},
-    {path:"event-details", element:<EventDetails/>}
+    {path:"/all-events", element:<AllEvents/>},
+    {path:"/admin-dashboard", element:<AdminDashboard/>},
+    {path:"/event-creation", element:<EventCreation/>},
+    {path:"/event-details", element:<EventDetails/>}
 
   ])
 

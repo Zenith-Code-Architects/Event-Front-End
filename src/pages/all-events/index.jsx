@@ -23,7 +23,7 @@ const AllEvents = () => {
   return (
     <>
       
-      <div className='grid justify-center'>
+      <div className='grid gap-y-4 justify-center'>
         {events?.map(event => (
           <EventCards
             flier = {`https://savefiles.org/${event.eventFlier}?shareable_link=263`}
