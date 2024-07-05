@@ -7,7 +7,7 @@ import Logo5 from "../../../assets/images/logo5.png"
 
 const OurCustomers = () => {
   return (
-    <div className="flex justify-between bg-black">
+    <div className="flex justify-between">
       <img src={Logo1} alt="" />
       <img src={Logo2} alt="" />
       <img src={Logo3} alt="" />

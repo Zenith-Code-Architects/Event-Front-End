@@ -7,7 +7,7 @@ const Nav = {
         },
         {
             name:"About",
-            path:"/about-us"
+            path:"aboutus"
         },
         {
             name:"Events",
@@ -15,7 +15,7 @@ const Nav = {
         },
         {
             name:"Contact Us",
-            path:"/contact-us"
+            path:"contactus"
         },
         { name: "Create Event +", path: "event-creation", newWindow: true }
 

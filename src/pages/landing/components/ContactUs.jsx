@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <>
       <div>
-        <div className='mt-8 py-[80px] bg-[#F7F7F7]'>
+        <div className=' py-[80px] bg-[#F7F7F7]'>
           <div className='mb-[50px] relative ml-28'>
             <span className='absolute z-[1] bg-[#FF7013] w-11/12 -left-2 h-1 top-[-20px]'></span>
             <h4 className='text-[#878787] mb-4 tracking-[5px] text-lg'>CONTACT US</h4>
@@ -15,12 +15,12 @@ const ContactUs = () => {
           <div className='flex flex-col place-items-center gap-x-3' >
             <div className='flex flex-row gap-2'>
               <div>
-                <Forms type='text' nameholder='Heart' />
-                <Forms type='text' nameholder='Heart' />
+                <Forms type='text' nameholder='Your Name' />
+                <Forms type='text' nameholder='Your Country' />
               </div>
               <div>
-                <Forms type='text' nameholder='Heart' />
-                <Forms type='text' nameholder='Heart' />
+                <Forms type='text' nameholder='Email Address' />
+                <Forms type='text' nameholder='Phone Number' />
               </div>
             </div>
             <div>

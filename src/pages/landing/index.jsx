@@ -8,14 +8,13 @@ import OurCustomers from "./components/OurCustomers";
 
 const LandingPage = () => {
     return (
-        <div>
-            <NavBar />
-            <Hero />
+        <div><NavBar />
+           <Hero />
+            <section id="aboutus"><AboutUs /></section>
             <section id="eventlistings"><EventListings /></section>
-            <AboutUs />
-            <ContactUs />
-            <OurCustomers />
-            <Footer />
+            <section id="contactus"><ContactUs /></section>
+            <section id="ourcustomers"><OurCustomers /></section>
+           <Footer />
         </div>
     )
 }

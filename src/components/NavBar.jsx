@@ -5,8 +5,8 @@ import Logo from "../assets/images/logo.jpg"
 
 const NavBar = () => {
   return (
-    <nav className='flex justify-between fixed w-full px-20 py-10 bg-amber-900'>
-      <img src={Logo} alt="logo" className='h-12 w-auto'/>
+    <nav className='flex justify-between fixed w-full px-20 py-10 z-50 bg-black/65 h-4'>
+      {/* <img src={Logo} alt="logo" className='h-12 w-auto'/> */}
 <ul className="nav-links">
                 {Nav.NAVLINKS.map(link => (
                     <li key={link.path}>

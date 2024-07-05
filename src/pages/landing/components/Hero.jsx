@@ -1,15 +1,32 @@
 import React from 'react';
 import { heroBg } from '../../../assets';
+import { Link } from 'react-router-dom'
 
 
 
 const Hero = () => {
   return (
     <div>
+      <div className='bgImage2'>
+        <div className='overlay flex flex-col justify-center items-center'>
+          <h3 className='text-white text-[42px]'>ZCA <strong className='text-[#FFBE30]'>EVENTS</strong></h3>
+          <h4 className='text-white spaces2'>  HOME | OF <Link to='all-events'>ALL EVENTS</Link></h4>
+        </div>
+      </div>
+      <div className='bg-[url("./assets/images/SpecialOfferImage.png")] h-[30vh] -mt-40 flex flex-row gap-x-36 items-center'>
+        <div className=' ml-6'>
+          {/* <p className='text-white text-sm spaces2'> </p> */}
+          <p className='text-[24px] text-white'>FIND THE BEST <strong> EVENT ON ZCA</strong></p>
+        </div>
+        <input type="text" placeholder='Search event' className='w-[350px] rounded-2xl p-2' />
+      </div>
+    </div>
+  )
+}
 
 
 
-      <div className="place-content-center">
+{/* <div className="place-content-center">
 
         <div className="bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('./assets/images/heroBg.jpg')] bg-cover bg-center h-screen flex flex-col place-items-center place-content-center">
 
@@ -27,12 +44,10 @@ const Hero = () => {
 
         </div>
 
-      </div>
+      </div> */}
 
-    </div>
 
-  )
-}
+
 
 export default Hero
 

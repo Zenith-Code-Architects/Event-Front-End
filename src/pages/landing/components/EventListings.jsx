@@ -6,15 +6,18 @@ import EventImageThree from '../../../assets/images/fashion.avif'
 import EventImageFour from '../../../assets/images/tech.jpg'
 import '../../../App.css'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
+import { FastForwardIcon } from 'lucide-react'
+import { ChevronDoubleRightIcon } from '@heroicons/react/24/outline'
 
 const EventListings = () => {
   
 
   return (
-    <><div >
+    <><div className='bg-[#F7F7F7]' >
       <h3 className=''>ZCA EVENTS</h3>
       <h2>Event Listing</h2>
-      <div className='flex justify-center gap-x-6 py-28 bg-[#F7F7F7]'>
+      <div className='flex justify-center gap-x-6 py-28 '>
         <div className='flex flex-col gap-y-11'>
           <div className='bg-[#FFFFFF] p-4 border-[1px] hover:border-[#ffbe30]'>
             <EventCards
@@ -59,7 +62,11 @@ const EventListings = () => {
               presenter='France Football' />
           </div>
         </div>
-        <a href="all-events" className='text-sm'>SEE MORE</a>
+        <div className='self-end flex items-center' >
+        <Link to='/all-events'  className='text-sm flex flex-row'>SEE MORE  </Link>
+        <Link><ChevronDoubleRightIcon width={12} height={12} className='' /></Link>
+        </div>
+        
       </div>
       </div>
     </>

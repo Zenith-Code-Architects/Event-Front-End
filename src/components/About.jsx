@@ -1,8 +1,11 @@
 const About = ({icon, text}) => {
   return (
-    <div className=" w-48 h-[50vh] flex flex-col items-center justify-center">
-          <i className=""> {icon}</i>
-          <p className="text-white">{text}</p>
+    <div className="">
+      <div className=" border-[0.2px] rounded-md border-[#FF7013] h-24 w-24 flex justify-center drop-shadow-md mb-2 items-center bg-[#F7F7F7]">
+      <i> {icon}</i>
+      </div>
+          
+          <p className="text-black"><strong>{text}</strong></p>
     </div>
   )
 }
