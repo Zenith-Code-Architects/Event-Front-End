@@ -15,8 +15,8 @@ const EventListings = () => {
 
   return (
     <><div className='bg-[#F7F7F7]' >
-      <h3 className=''>ZCA EVENTS</h3>
-      <h2>Event Listing</h2>
+      {/* <h3 className='text-xl'>ZCA EVENTS</h3>
+      <h2>Event Listing</h2> */}
       <div className='flex justify-center gap-x-6 py-28 '>
         <div className='flex flex-col gap-y-11'>
           <div className='bg-[#FFFFFF] p-4 border-[1px] hover:border-[#ffbe30]'>
